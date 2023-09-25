@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Share your score with me </h1>
+    <script>
+        let x = Math.floor((Math.random() * 100) + 1);
+        let chance = 0
+        let guess;
+        while (guess != x) {
+            guess = prompt("Guess the number between 1 to 100")
+            guess = Number.parseInt(guess)
+            if (guess < x) {
+                alert("Your guess is less than the correct number")
+            }
+            else if (guess > x) {
+                alert("Your guess is greater than the correct number")
+            }
+            chance++
+        }
+        alert("Congratulations you have guessed the correct word")
+        alert("And your Score is " + (100 - chance + 1) )
+        
+
+
+    </script>
+</body>
+
+</html>
